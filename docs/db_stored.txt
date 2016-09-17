@@ -1,0 +1,23 @@
+permissions
+==================
+edit_auth_groups
+- create
+- remove
+- edit
+- add user
+- remove user
+edit_user
+- associate
+srp_approve
+- approve
+- deny
+- release
+
+settings
+=========
+{
+  id: 'prices',
+  group: 'market',
+  deviation: 0.1, // 10% by default
+  timeout: 60 * 60 * 24 * 7 // In seconds, "about" (not exactly) one week by default
+}

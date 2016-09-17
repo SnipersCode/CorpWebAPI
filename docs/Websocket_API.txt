@@ -1,0 +1,124 @@
+module: auth
+=============
+
+endpoint: logout
+-----------------
+If payload is truthy, deletes current session
+Else, deletes all sessions
+
+endpoint: groups.add_user
+------------------------
+payload: {
+	user_id (str): User id of target user
+	groups (array, str): Array of group strings to add
+}
+
+endpoint: groups.remove_user
+------------------------
+payload: {
+	user_id (str): User id of target user
+	groups (array, str): Array of group strings to remove
+}
+
+endpoint: groups.create
+-----------------------------
+payload: {
+	id (str): Name of group. Should be unique. Overrides on not unique.
+	priority (int): Lower takes priority,
+	permission (bool): True if allowed. False if explicitly not allowed.,
+	permission (bool): ...
+}
+
+endpoint: groups.edit
+-----------------------
+same payload as groups.create, except only include properties that will change.
+
+endpoint: groups.remove
+------------------------
+payload (str): id for group
+
+endpoint: user.associate
+--------------------------
+payload: {
+    user_id (str): User id of target user
+    main_user_id (str): User id of the main user. Must be the same as logged in user if not admin.
+}
+
+endpoint: user.characters
+--------------------------
+payload (str): "User id of target user"
+return (object): [
+	{
+		character_name,
+		corporation_name,
+		alliance_name
+		
+	}
+]
+
+module: srp
+============
+
+endpoint: lossmails.get
+----------------------------
+payload (null): ignored
+return (object): [
+	{
+		id: kill id,
+		submitter_id: user id,
+		submitter_name: user name,
+		ship_item_id,
+		victim: {
+			alliance_id,
+			alliance_name,
+			character_id,
+			character_name,
+			corporation_id,
+			corporation_name
+		},
+		items: [
+			{ flag, count_destroyed, count_dropped, singleton (bool), item_id },
+			...
+		],
+		srp_user_id: user id (only if is valid loss),
+		srp_base_price: price
+	},
+	...
+]
+
+endpoint: lossmails.submit
+-----------------------------
+payload (array): [{
+	"id": "kill id",
+	"reimburse_to": "character name",
+	"aar": "link",
+	"srp_type": "srp type"
+}, ...]
+
+endpoint: lossmails.all
+------------------------------
+payload (null): ignored
+return (object): [
+	{
+		id: kill id,
+		submitter_id: user id,
+		submitter_name: user name,
+		ship_item_id,
+		victim: {
+			alliance_id,
+			alliance_name,
+			character_id,
+			character_name,
+			corporation_id,
+			corporation_name
+		},
+		items: [
+			{ flag, count_destroyed, count_dropped, singleton (bool), item_id },
+			...
+		],
+		srp_user_id: user id,
+		srp_base_price: price,
+		timestamp: Date of submission
+	},
+	...
+]

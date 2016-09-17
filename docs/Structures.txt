@@ -1,0 +1,90 @@
+Structures
+
+User
+=========
+{
+	id: "CharacterID-CharacterOwnerHash",
+	character_id,
+	character_name,
+	character_owner_hash,
+	corporation_id,
+	corporation_name,
+	alliance_id,
+	alliance_name,
+	crest_access_token,
+	crest_refresh_token,
+	crest_token_type: "Bearer",
+	crest_scopes: ["scope", ...],
+	expires_on: Date(),
+	auth_type: "Character or Corporation",
+	main_user: "User ID of main character",
+	auth_groups: ["group id", ...]
+}
+
+jwt
+==========
+payload: 
+{
+	user_id: "User ID or null if anonymous",
+	character_id,
+	character_name,
+	character_owner_hash,
+	corporation_id,
+	corporation_name,
+	alliance_id,
+	alliance_name,
+	auth_groups: ["group", ...]
+	permissions: [["key", "value"], ...]
+}
+sign_secret: config.sign_secret
+options:
+{
+  expiresIn: config.max_session,
+  audience: "CorpWeb:Main",
+  issuer: config.hostname,
+  subject: "CorpWeb:Auth",
+  jwtid: connection_uuid
+}
+
+client
+==========
+{
+	id: "spark id",
+	user_id: "user id",
+	name: "user name",
+	jti: "session id",
+	jwt_data: Object,
+	permissions: Map of permissions
+}
+
+*****************
+Message Protocol:
+
+Server
+==========
+On error:
+{
+	error: "Type of error",
+	message: "Error message"
+}
+Errors:
+auth.session
+auth.jwt
+
+On send:
+{
+	jwt: "New jwt automatically sent if authed. Client should replace."
+	module: "ex. auth",
+	endpoint: "ex. authenticate",
+	payload: Object
+}
+
+Client
+==========
+On send:
+{
+	jwt: "null if no jwt",
+	module: "ex. auth",
+	endpoint: "ex. authenticate",
+	payload: Object
+}

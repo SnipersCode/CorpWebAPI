@@ -1,0 +1,26 @@
+{
+  "name": "CorpWebAPI",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.7.1",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^7.1.9",
+    "morgan": "~1.7.0",
+    "node-uuid": "^1.4.7",
+    "primus": "^6.0.1",
+    "request": "^2.74.0",
+    "rethinkdbdash": "^2.3.19",
+    "serve-favicon": "~2.3.0",
+    "sockjs": "^0.3.17",
+    "sockjs-client": "^1.1.1",
+    "xml2js": "^0.4.17"
+  }
+}
