@@ -2,7 +2,7 @@ const crypto = require('crypto');
 
 const config = {};
 
-config.hostname = process.env.HOSTNAME || "Anonymous-CorpWebAPI";
+config.hostname = process.env.VIRTUAL_HOST || "Anonymous-CorpWebAPI";
 config.frontend = {
   uri: process.env.FRONTEND_URI || "http://localhost:9000",
   jwt_endpoint: "/eve-sso"
