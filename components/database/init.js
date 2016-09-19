@@ -1,5 +1,6 @@
 const r = require('./database');
 const static_db = require('../eve_api/static');
+const config = require('../../config');
 
 const tables = new Map();
 tables.set("auth_groups", ["priority"]);
@@ -72,7 +73,14 @@ module.exports = (callback) => {
     .catch((error) => {
       // Ignore ReqlOpFailedError
     })
-    //.then(() => static_db.refresh())  // Uncomment to refresh statics every restart
+    .then(() => {
+      if (config.static_refresh) {
+        console.log("Refreshing EVE Statics");
+        static_db.refresh();
+      } else {
+        console.log("Skipping EVE Statics Refresh");
+      }
+    })  // Uncomment to refresh statics every restart
     .then(() => {
       callback();
     });

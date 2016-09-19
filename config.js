@@ -8,6 +8,7 @@ config.frontend = {
   jwt_endpoint: "/eve-sso"
 };
 config.db = process.env.RETHINKDB || "localhost";
+config.static_refresh = process.env.NODE_ENV == 'production' || false;
 
 config.sign_secret = process.env.SIGN_SECRET || crypto.randomBytes(48).toString('hex');
 
