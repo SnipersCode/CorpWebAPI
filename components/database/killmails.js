@@ -34,7 +34,7 @@ function read_kills(token, user) {
           };
           // Find items
           kill.rowset.forEach((data) => {
-            if (data.$.name === "items") {
+            if (data.$.name === "items" && data.row) {
               data.row.forEach((item) => {
                 info.items.push({
                   flag: Number(item.$.flag),
