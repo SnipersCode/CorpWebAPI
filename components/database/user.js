@@ -56,7 +56,16 @@ module.exports.associate_changes = function associate_changes(callback) {
 
 module.exports.associations = function associations(user_id) {
   return r.table('users').getAll(user_id, {index: "main_user"})
-    .pluck(["id", "character_id", "character_name", "corporation_name", "alliance_name"]).run();
+    .pluck(["id", "character_id", "character_name", "corporation_name", "alliance_name"]).run()
+    .then((associations) => {
+      if (associations && associations.length !== 0) {
+        return associations;
+      } else {
+        return r.table('users').get(user_id)
+          .pluck(["id", "character_id", "character_name", "corporation_name", "alliance_name"])
+          .run().then((single_user) => [single_user]);
+      }
+    });
 };
 
 module.exports.update_affiliations = function update_affiliations(user_id) {

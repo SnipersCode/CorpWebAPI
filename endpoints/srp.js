@@ -34,11 +34,19 @@ const endpoint = function on_data(client, data) {
                   })
                   .then(() => eve.ships.get(loss.ship_item_id))
                   .then((ship) => {
-                    loss.ship_name = ship.name;
-                    loss.ship_group_id = ship.group_id;
-                    loss.ship_group_name = ship.group_name;
-                    loss.lower_ship_group_id = ship.lower_group_id;
-                    loss.lower_ship_group_name = ship.lower_group_name;
+                    if (!ship) {
+                      loss.ship_name = "N/A";
+                      loss.ship_group_id = -1;
+                      loss.ship_group_name = "N/A";
+                      loss.lower_ship_group_id = -1;
+                      loss.lower_ship_group_name = "N/A";
+                    } else {
+                      loss.ship_name = ship.name;
+                      loss.ship_group_id = ship.group_id;
+                      loss.ship_group_name = ship.group_name;
+                      loss.lower_ship_group_id = ship.lower_group_id;
+                      loss.lower_ship_group_name = ship.lower_group_name;
+                    }
                     return Promise.resolve();
                   })
                   .then(() => eve.systems.get(loss.solar_system_id))

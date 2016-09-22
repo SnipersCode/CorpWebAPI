@@ -1,5 +1,6 @@
 const request = require('../core/promises').request;
 const xmlParser = require('../core/promises').xmlParser;
+const fs = require('../core/promises').fs;
 
 const config = require('../../config');
 
@@ -47,4 +48,8 @@ module.exports.char = {
       access_token
     )
   ).then(xmlParser)
+  // Use fake response
+  /*KillMails: (characterID, access_token) => {
+    return fs(__dirname + "/../../test/responses/xml/Character_KillMails.xml").then(xmlParser)
+  }*/
 };

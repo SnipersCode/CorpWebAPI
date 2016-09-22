@@ -1,102 +1,561 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <eveapi version="2">
-  <currentTime>2016-07-06 05:49:28</currentTime>
+  <currentTime>2016-09-22 15:23:53</currentTime>
   <result>
     <rowset name="kills" key="killID" columns="killID,solarSystemID,killTime,moonID">
-      <row killID="54933226" solarSystemID="31001222" killTime="2016-07-03 22:29:19" moonID="0">
-        <victim characterID="93256039" characterName="Madcat326" corporationID="98008818" corporationName="Haight Industries LLC" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="63039" shipTypeID="17918" x="59788513854.179" y="-13687850177.3741" z="157817245029.115" />
+      <row killID="56113550" solarSystemID="30000586" killTime="2016-09-15 23:38:58" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="99004905" allianceName="Short Bus Syndicate" factionID="0" factionName="" damageTaken="2159" shipTypeID="11176" x="1144659897326.32" y="-64855687207.38" z="-388855896048.853" />
         <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
-          <row characterID="91316135" characterName="Celeo Servasse" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="-1.0646369409683" damageDone="7825" finalBlow="1" weaponTypeID="3520" shipTypeID="12003" />
-          <row characterID="95273329" characterName="Mupoc Kashuken" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="-0.2" damageDone="16656" finalBlow="0" weaponTypeID="31882" shipTypeID="12023" />
-          <row characterID="94389072" characterName="Johanis Cal-dahari" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="2" damageDone="11999" finalBlow="0" weaponTypeID="24486" shipTypeID="29986" />
-          <row characterID="92090484" characterName="Foxstar Damaskeenus" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="-0.4" damageDone="10383" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="95708401" characterName="Bibet Shakure" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="-1.3" damageDone="6928" finalBlow="0" weaponTypeID="24490" shipTypeID="29986" />
-          <row characterID="0" characterName="" corporationID="500020" corporationName="Serpentis" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="0" damageDone="3903" finalBlow="0" weaponTypeID="0" shipTypeID="38659" />
-          <row characterID="96420826" characterName="D Joker" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="0" damageDone="2858" finalBlow="0" weaponTypeID="2488" shipTypeID="33470" />
-          <row characterID="0" characterName="" corporationID="500011" corporationName="Angel Cartel" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="0" damageDone="2487" finalBlow="0" weaponTypeID="0" shipTypeID="42127" />
-          <row characterID="94791823" characterName="chaosInjection" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="-1" damageDone="0" finalBlow="0" weaponTypeID="12267" shipTypeID="29986" />
-          <row characterID="90957994" characterName="Conner Asanari" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="0.5" damageDone="0" finalBlow="0" weaponTypeID="16521" shipTypeID="22452" />
+          <row characterID="1178739596" characterName="Silas Cooper" corporationID="98419922" corporationName="Chinese Gold Farmers" allianceID="99006326" allianceName="Play Hard Pray Harder" factionID="0" factionName="" securityStatus="1.1887426744705" damageDone="2159" finalBlow="1" weaponTypeID="3162" shipTypeID="11200" />
+          <row characterID="93024901" characterName="Mr Aurilen" corporationID="353654460" corporationName="Broski North" allianceID="99006326" allianceName="Play Hard Pray Harder" factionID="0" factionName="" securityStatus="-2" damageDone="0" finalBlow="0" weaponTypeID="5302" shipTypeID="11174" />
         </rowset>
         <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
-          <row typeID="394" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="24427" flag="32" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="2446" flag="87" qtyDropped="1" qtyDestroyed="1" singleton="0" />
-          <row typeID="28209" flag="87" qtyDropped="2" qtyDestroyed="0" singleton="0" />
-          <row typeID="4405" flag="15" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="33450" flag="27" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="19215" flag="23" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="2456" flag="87" qtyDropped="5" qtyDestroyed="0" singleton="0" />
-          <row typeID="26448" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="33450" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="394" flag="24" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="394" flag="21" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="19215" flag="19" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="4405" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="1422" flag="12" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="2048" flag="16" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="26448" flag="94" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="33450" flag="29" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="33450" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="2629" flag="5" qtyDropped="1750" qtyDestroyed="0" singleton="0" />
-          <row typeID="33450" flag="31" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="2281" flag="22" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="19241" flag="25" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="1422" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="26448" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="1422" flag="11" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27361" flag="30" qtyDropped="26" qtyDestroyed="0" singleton="0" />
+          <row typeID="2404" flag="30" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="8521" flag="19" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2404" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="24501" flag="5" qtyDropped="1000" qtyDestroyed="0" singleton="0" />
+          <row typeID="27361" flag="27" qtyDropped="26" qtyDestroyed="0" singleton="0" />
+          <row typeID="26929" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="11563" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27361" flag="5" qtyDropped="1776" qtyDestroyed="0" singleton="0" />
+          <row typeID="2048" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="3244" flag="20" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="4027" flag="22" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27361" flag="29" qtyDropped="26" qtyDestroyed="0" singleton="0" />
+          <row typeID="5973" flag="21" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="2404" flag="29" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="31111" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27361" flag="28" qtyDropped="26" qtyDestroyed="0" singleton="0" />
+          <row typeID="24495" flag="5" qtyDropped="0" qtyDestroyed="1212" singleton="0" />
+          <row typeID="2404" flag="28" qtyDropped="1" qtyDestroyed="0" singleton="0" />
         </rowset>
       </row>
-      <row killID="54868503" solarSystemID="31000868" killTime="2016-06-30 03:39:22" moonID="0">
-        <victim characterID="93256039" characterName="Celeo Servasse" corporationID="98134538" corporationName="Wormbro" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="18472" shipTypeID="11987" x="685670430496.578" y="-376814977944.382" z="-365907110851.975" />
+      <row killID="56035108" solarSystemID="30045312" killTime="2016-09-11 06:04:52" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="4551" shipTypeID="621" x="453149021920.206" y="-25282198316.0244" z="1064992402502.68" />
         <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
-          <row characterID="641035756" characterName="Lenex Raay" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="5.00297218487895" damageDone="1169" finalBlow="1" weaponTypeID="2969" shipTypeID="22444" />
-          <row characterID="1817541889" characterName="gr33nCO" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-0.1" damageDone="2163" finalBlow="0" weaponTypeID="2456" shipTypeID="22444" />
-          <row characterID="92060039" characterName="Braxus Deninard" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-0.7" damageDone="1770" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="1734877398" characterName="Pantuf" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="4.9" damageDone="1681" finalBlow="0" weaponTypeID="2456" shipTypeID="22444" />
-          <row characterID="92941592" characterName="Foedus Latro" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-1.2" damageDone="1663" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="782985098" characterName="AwingendeR" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="1.9" damageDone="1501" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="93802816" characterName="Tycho Loor" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-1.9" damageDone="1405" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="91004291" characterName="Broxis Khoros" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-1.8" damageDone="1228" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="92007576" characterName="Dean Mintar" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="3.1" damageDone="1057" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="91702100" characterName="EMU EVIL" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-1.4" damageDone="792" finalBlow="0" weaponTypeID="2488" shipTypeID="11978" />
-          <row characterID="95430803" characterName="Violet Dawn" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="1" damageDone="789" finalBlow="0" weaponTypeID="2488" shipTypeID="33157" />
-          <row characterID="647412341" characterName="Lysus" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-2" damageDone="761" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="91986431" characterName="sHanQ Myteia" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-1" damageDone="497" finalBlow="0" weaponTypeID="2456" shipTypeID="11963" />
-          <row characterID="90571681" characterName="Pyrric Skloric" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="0.1" damageDone="356" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="964223112" characterName="Tisisan" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="0.9" damageDone="313" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="1039287135" characterName="J3rz11" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="0.4" damageDone="265" finalBlow="0" weaponTypeID="2488" shipTypeID="22444" />
-          <row characterID="91343130" characterName="Sophia Utama" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="0.6" damageDone="237" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="94149890" characterName="Minnie Sodom" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="2.6" damageDone="225" finalBlow="0" weaponTypeID="2488" shipTypeID="11978" />
-          <row characterID="91875279" characterName="Derek Itinen" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="0.8" damageDone="210" finalBlow="0" weaponTypeID="2488" shipTypeID="11978" />
-          <row characterID="1556079273" characterName="Alita Hayes" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-0.1" damageDone="186" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="2086742079" characterName="Turd Destroyer" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="3.3" damageDone="115" finalBlow="0" weaponTypeID="22444" shipTypeID="22444" />
-          <row characterID="91044028" characterName="Viktoria Bernhardt" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="2.8" damageDone="89" finalBlow="0" weaponTypeID="28215" shipTypeID="11978" />
-          <row characterID="941167595" characterName="Justin Cody" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="1.6" damageDone="0" finalBlow="0" weaponTypeID="15891" shipTypeID="11969" />
-          <row characterID="686125406" characterName="NoobMan" corporationID="98040755" corporationName="Hard Knocks Inc." allianceID="99005065" allianceName="Hard Knocks Citizens" factionID="0" factionName="" securityStatus="-0.1" damageDone="0" finalBlow="0" weaponTypeID="2873" shipTypeID="11186" />
+          <row characterID="96355060" characterName="DaDa Qin" corporationID="98463498" corporationName="Rogue Planet" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="2.13609157340155" damageDone="4551" finalBlow="1" weaponTypeID="28288" shipTypeID="33470" />
         </rowset>
         <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
-          <row typeID="16455" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="16455" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="31366" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="16487" flag="32" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="6005" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="16487" flag="31" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="29011" flag="5" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="31366" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="29009" flag="5" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="13970" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="13982" flag="12" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="2048" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="18712" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="20353" flag="15" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="16455" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
-          <row typeID="16455" flag="29" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="2488" flag="87" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="41155" flag="20" qtyDropped="0" qtyDestroyed="1" singleton="0" />
-          <row typeID="1952" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="21096" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1317" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="16273" flag="5" qtyDropped="245" qtyDestroyed="0" singleton="0" />
+          <row typeID="1317" flag="13" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="11577" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1317" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="16303" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55978242" solarSystemID="30045312" killTime="2016-09-08 01:44:56" moonID="0">
+        <victim characterID="93256039" characterName="HereFor TheLP" corporationID="98393635" corporationName="Black Shark Cult" allianceID="0" allianceName="" factionID="500001" factionName="Caldari State" damageTaken="0" shipTypeID="670" x="1068041504209.4" y="-163361604044.279" z="-772036365583.678" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-1.62687350510823" damageDone="0" finalBlow="1" weaponTypeID="448" shipTypeID="37456" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55978208" solarSystemID="30045312" killTime="2016-09-08 01:41:02" moonID="0">
+        <victim characterID="93256039" characterName="HereFor TheLP" corporationID="98393635" corporationName="Black Shark Cult" allianceID="0" allianceName="" factionID="500001" factionName="Caldari State" damageTaken="999" shipTypeID="583" x="1068041504245.88" y="-163361604007.335" z="-772036365620.013" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-1.34398481726138" damageDone="999" finalBlow="1" weaponTypeID="2456" shipTypeID="37456" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55962653" solarSystemID="30045312" killTime="2016-09-07 02:11:57" moonID="0">
+        <victim characterID="93256039" characterName="Tube Socks" corporationID="1000180" corporationName="State Protectorate" allianceID="0" allianceName="" factionID="500001" factionName="Caldari State" damageTaken="0" shipTypeID="670" x="1475405415043.16" y="-308403238950.133" z="-1208285906499.6" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-1.31561116617139" damageDone="0" finalBlow="1" weaponTypeID="448" shipTypeID="37456" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55962129" solarSystemID="30045312" killTime="2016-09-07 01:22:46" moonID="0">
+        <victim characterID="93256039" characterName="Tube Socks" corporationID="1000180" corporationName="State Protectorate" allianceID="0" allianceName="" factionID="500001" factionName="Caldari State" damageTaken="1518" shipTypeID="591" x="1475405415013.66" y="-308403238920.806" z="-1208285906528.77" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-1.02316498233276" damageDone="1518" finalBlow="1" weaponTypeID="2488" shipTypeID="37456" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="10998" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="10998" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="10998" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="10998" flag="14" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55808888" solarSystemID="30001985" killTime="2016-08-29 01:44:33" moonID="0">
+        <victim characterID="93256039" characterName="Officer CaitIyn" corporationID="1000170" corporationName="Republic Military School" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="418" shipTypeID="670" x="-17918981929.6425" y="-2293802298.45174" z="4312280768775.46" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.960363575331585" damageDone="418" finalBlow="1" weaponTypeID="2913" shipTypeID="29990" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55808869" solarSystemID="30001985" killTime="2016-08-29 01:41:37" moonID="0">
+        <victim characterID="93256039" characterName="Officer CaitIyn" corporationID="1000170" corporationName="Republic Military School" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="530" shipTypeID="588" x="-17918974721.3423" y="-2293800946.45217" z="4312280776191.5" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.960363575331585" damageDone="530" finalBlow="1" weaponTypeID="2913" shipTypeID="29990" />
+          <row characterID="0" characterName="" corporationID="1000127" corporationName="Guristas" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="0" damageDone="0" finalBlow="0" weaponTypeID="0" shipTypeID="11029" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="34" flag="5" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="3636" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="3651" flag="28" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55802929" solarSystemID="30003698" killTime="2016-08-28 20:13:16" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="461" shipTypeID="670" x="2603416048924.83" y="438180239502.702" z="2142616748282.36" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1040153455" characterName="Jarka Ruus" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5.00676141554977" damageDone="167" finalBlow="1" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="1943381708" characterName="Picadorf" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="294" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="96316572" characterName="Oksana Oksanovic" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.8" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="93253694" characterName="Jan Bonet" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.8" damageDone="0" finalBlow="0" weaponTypeID="1877" shipTypeID="621" />
+          <row characterID="91545083" characterName="Kizamare Ellecon" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96488415" characterName="Choc Starfish" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="1875" shipTypeID="621" />
+          <row characterID="96394839" characterName="Scape Blacksheep" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.4" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96320876" characterName="Gluteus Maximus Humongous" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.8" damageDone="0" finalBlow="0" weaponTypeID="5443" shipTypeID="585" />
+          <row characterID="96603993" characterName="Nikita Sparkow" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1" damageDone="0" finalBlow="0" weaponTypeID="5299" shipTypeID="609" />
+          <row characterID="96290319" characterName="stealy Alabel" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.8" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="92971839" characterName="Godofal Pappotte" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="16527" shipTypeID="34828" />
+          <row characterID="95503439" characterName="Lillith Dragonia" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="2.8" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96509684" characterName="Mr Bignose" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.9" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="581199275" characterName="Freebit" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.4" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96250716" characterName="Raven Dallacort" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96141993" characterName="Stringer Apini" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.7" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96357029" characterName="Badvibes Tudor" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.9" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="889695266" characterName="Demethius DarkFantasy" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.5" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55802891" solarSystemID="30003698" killTime="2016-08-28 20:12:02" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="20978" shipTypeID="11961" x="2603416048922.07" y="438180239380.32" z="2142616748547.52" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1040153455" characterName="Jarka Ruus" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5.00676141554977" damageDone="767" finalBlow="1" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="1085360460" characterName="Seraphi Nyx" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="4538" finalBlow="0" weaponTypeID="28215" shipTypeID="17843" />
+          <row characterID="96351394" characterName="Erotyk" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1.8" damageDone="2665" finalBlow="0" weaponTypeID="27381" shipTypeID="621" />
+          <row characterID="1824523597" characterName="Objectless Hatred" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="1822" finalBlow="0" weaponTypeID="212" shipTypeID="621" />
+          <row characterID="889695266" characterName="Demethius DarkFantasy" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.5" damageDone="1490" finalBlow="0" weaponTypeID="27381" shipTypeID="621" />
+          <row characterID="95792740" characterName="Krom Alabel" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.4" damageDone="1359" finalBlow="0" weaponTypeID="27381" shipTypeID="621" />
+          <row characterID="93459727" characterName="Chuck Punder" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="1041" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="1943381708" characterName="Picadorf" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="1021" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="94442116" characterName="Honor Treecat" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.9" damageDone="910" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="581199275" characterName="Freebit" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.4" damageDone="905" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="96320876" characterName="Gluteus Maximus Humongous" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.8" damageDone="745" finalBlow="0" weaponTypeID="585" shipTypeID="585" />
+          <row characterID="1980336415" characterName="Saxetor" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.5" damageDone="593" finalBlow="0" weaponTypeID="11178" shipTypeID="11178" />
+          <row characterID="96363409" characterName="Varna Chivoj" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="522" finalBlow="0" weaponTypeID="2205" shipTypeID="32872" />
+          <row characterID="859217435" characterName="Faridah" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="496" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="94578507" characterName="Alex Graser" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1.9" damageDone="422" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="96141993" characterName="Stringer Apini" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.7" damageDone="361" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="91545083" characterName="Kizamare Ellecon" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="319" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="96509684" characterName="Mr Bignose" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.9" damageDone="246" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="94027188" characterName="Fearless Jin Serb" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="211" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="96290319" characterName="stealy Alabel" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.8" damageDone="195" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="96699418" characterName="Lennart Night" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.3" damageDone="163" finalBlow="0" weaponTypeID="585" shipTypeID="585" />
+          <row characterID="93552867" characterName="Neorec Hurricane" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.4" damageDone="139" finalBlow="0" weaponTypeID="23559" shipTypeID="626" />
+          <row characterID="96675701" characterName="St Petri" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.1" damageDone="48" finalBlow="0" weaponTypeID="585" shipTypeID="585" />
+          <row characterID="94545013" characterName="Holywallrus Alabel" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="2.6" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96558863" characterName="TitanSumerous Sumerous" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.1" damageDone="0" finalBlow="0" weaponTypeID="5137" shipTypeID="585" />
+          <row characterID="96266519" characterName="Judas GoldStein" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="3244" shipTypeID="12034" />
+          <row characterID="95503439" characterName="Lillith Dragonia" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="2.8" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96394839" characterName="Scape Blacksheep" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.4" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96250716" characterName="Raven Dallacort" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="92971839" characterName="Godofal Pappotte" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="16527" shipTypeID="34828" />
+          <row characterID="96488415" characterName="Choc Starfish" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="1875" shipTypeID="621" />
+          <row characterID="96559938" characterName="Hosein Zateki" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.7" damageDone="0" finalBlow="0" weaponTypeID="4025" shipTypeID="608" />
+          <row characterID="93253694" characterName="Jan Bonet" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.8" damageDone="0" finalBlow="0" weaponTypeID="1877" shipTypeID="621" />
+          <row characterID="583520479" characterName="Caldari Citizen 583520479" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96354542" characterName="Al Lafisques" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96603993" characterName="Nikita Sparkow" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1" damageDone="0" finalBlow="0" weaponTypeID="5299" shipTypeID="609" />
+          <row characterID="96357029" characterName="Badvibes Tudor" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.9" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96316572" characterName="Oksana Oksanovic" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.8" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="9207" flag="30" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="31796" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2281" flag="21" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="33474" flag="5" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="9207" flag="29" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21937" flag="28" qtyDropped="17" qtyDestroyed="0" singleton="0" />
+          <row typeID="21937" flag="5" qtyDropped="0" qtyDestroyed="2500" singleton="0" />
+          <row typeID="2048" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="3841" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="3841" flag="20" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1447" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="35660" flag="23" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="31796" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="17559" flag="24" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="9207" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21937" flag="30" qtyDropped="0" qtyDestroyed="17" singleton="0" />
+          <row typeID="1541" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="28668" flag="5" qtyDropped="250" qtyDestroyed="0" singleton="0" />
+          <row typeID="2281" flag="22" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1447" flag="5" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21937" flag="29" qtyDropped="17" qtyDestroyed="0" singleton="0" />
+          <row typeID="19814" flag="5" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="9207" flag="27" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1541" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21937" flag="27" qtyDropped="0" qtyDestroyed="17" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55802844" solarSystemID="30003698" killTime="2016-08-28 20:10:21" moonID="0">
+        <victim characterID="93256039" characterName="Irish Momaki" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" damageTaken="2169" shipTypeID="11387" x="2603416117460.43" y="438180274162.423" z="2142616718564.37" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.903718692533047" damageDone="247" finalBlow="1" weaponTypeID="9207" shipTypeID="11961" />
+          <row characterID="1298207020" characterName="tman299" corporationID="98106596" corporationName="Saints Among Sinners" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4" damageDone="607" finalBlow="0" weaponTypeID="27361" shipTypeID="11993" />
+          <row characterID="90877664" characterName="Stenos Chriton" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="1.9" damageDone="607" finalBlow="0" weaponTypeID="27361" shipTypeID="11993" />
+          <row characterID="93309684" characterName="FyrenStar" corporationID="440090368" corporationName="M. Corp Engineering" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.7" damageDone="521" finalBlow="0" weaponTypeID="27361" shipTypeID="11993" />
+          <row characterID="1777798928" characterName="Siverene" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.8" damageDone="187" finalBlow="0" weaponTypeID="27441" shipTypeID="11993" />
+          <row characterID="993469602" characterName="Amrthis" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="3.4" damageDone="0" finalBlow="0" weaponTypeID="3170" shipTypeID="22460" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="20347" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="26929" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="5399" flag="19" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="11269" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="5973" flag="22" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="4025" flag="21" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2048" flag="12" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31322" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="4025" flag="20" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55799257" solarSystemID="30045309" killTime="2016-08-28 17:39:08" moonID="0">
+        <victim characterID="93256039" characterName="Open Your Heart" corporationID="98461758" corporationName="Fjuck tax" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="907" shipTypeID="3766" x="-4135852628356.04" y="-52065106446.6941" z="2225597522247.9" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.869718088712373" damageDone="907" finalBlow="1" weaponTypeID="2913" shipTypeID="29990" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="21096" flag="27" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55797316" solarSystemID="30045309" killTime="2016-08-28 15:48:49" moonID="0">
+        <victim characterID="93256039" characterName="LiveWire364" corporationID="98467239" corporationName="Cuck Works" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="1783" shipTypeID="11377" x="-4135852633491.51" y="-52065108016.8358" z="2225597522069.65" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.839130245807551" damageDone="1783" finalBlow="1" weaponTypeID="2913" shipTypeID="29990" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="21096" flag="27" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="16273" flag="5" qtyDropped="50" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55769302" solarSystemID="30045312" killTime="2016-08-27 01:56:03" moonID="0">
+        <victim characterID="93256039" characterName="ratain" corporationID="98240196" corporationName="Mostly Sober" allianceID="99003894" allianceName="The Bastard Cartel" factionID="0" factionName="" damageTaken="461" shipTypeID="670" x="1864752169893.31" y="-34158675969.8894" z="4268890520920.64" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.743717832083171" damageDone="461" finalBlow="1" weaponTypeID="2889" shipTypeID="11196" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55769297" solarSystemID="30045312" killTime="2016-08-27 01:54:52" moonID="0">
+        <victim characterID="93256039" characterName="ratain" corporationID="98240196" corporationName="Mostly Sober" allianceID="99003894" allianceName="The Bastard Cartel" factionID="0" factionName="" damageTaken="1523" shipTypeID="11186" x="1864752169862.78" y="-34158676000.1825" z="4268890520890.67" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.743717832083171" damageDone="209" finalBlow="1" weaponTypeID="2889" shipTypeID="11196" />
+          <row characterID="603860160" characterName="CrossMod" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.6" damageDone="1314" finalBlow="0" weaponTypeID="1877" shipTypeID="11993" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="2605" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1236" flag="14" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2404" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31153" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1952" flag="21" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="5973" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="5443" flag="5" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1236" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27387" flag="5" qtyDropped="1000" qtyDestroyed="0" singleton="0" />
+          <row typeID="2048" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="2404" flag="28" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="28" qtyDropped="46" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="29" qtyDropped="0" qtyDestroyed="46" singleton="0" />
+          <row typeID="27387" flag="27" qtyDropped="46" qtyDestroyed="0" singleton="0" />
+          <row typeID="2404" flag="29" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31105" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="29009" flag="21" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="3244" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55739405" solarSystemID="30045314" killTime="2016-08-25 04:42:16" moonID="0">
+        <victim characterID="93256039" characterName="SpiZZaa HamAndCheese" corporationID="98362674" corporationName="Brand Newbros" allianceID="498125261" allianceName="Test Alliance Please Ignore" factionID="0" factionName="" damageTaken="421" shipTypeID="670" x="46080986859.3107" y="34410337091.61" z="216485059732.855" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.710812246336578" damageDone="421" finalBlow="1" weaponTypeID="3178" shipTypeID="37456" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55739392" solarSystemID="30045314" killTime="2016-08-25 04:40:49" moonID="0">
+        <victim characterID="93256039" characterName="SpiZZaa HamAndCheese" corporationID="98362674" corporationName="Brand Newbros" allianceID="498125261" allianceName="Test Alliance Please Ignore" factionID="0" factionName="" damageTaken="1362" shipTypeID="589" x="46080986874.1119" y="34410337105.8984" z="216485059747.412" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.362754161832951" damageDone="860" finalBlow="1" weaponTypeID="2456" shipTypeID="37456" />
+          <row characterID="92106571" characterName="Pepo Pope" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-1" damageDone="502" finalBlow="0" weaponTypeID="2456" shipTypeID="17841" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="451" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="5849" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="4535" flag="11" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="4027" flag="20" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="434" flag="21" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="5443" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="2046" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="451" flag="29" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31442" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="246" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="246" flag="28" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="451" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="246" flag="29" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31454" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="5137" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55739312" solarSystemID="30045315" killTime="2016-08-25 04:28:45" moonID="0">
+        <victim characterID="93256039" characterName="Amaranth X" corporationID="98426503" corporationName="Central Military Commission" allianceID="99004264" allianceName="People's Liberation Alliance" factionID="500004" factionName="Gallente Federation" damageTaken="3206" shipTypeID="32876" x="-187646632238.811" y="-312028685470.677" z="-216021073301.369" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.471115512498728" damageDone="1674" finalBlow="1" weaponTypeID="2456" shipTypeID="37456" />
+          <row characterID="92106571" characterName="Pepo Pope" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.8" damageDone="742" finalBlow="0" weaponTypeID="2456" shipTypeID="17841" />
+          <row characterID="95695928" characterName="cobolt Aideron" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.4" damageDone="563" finalBlow="0" weaponTypeID="2456" shipTypeID="37456" />
+          <row characterID="0" characterName="" corporationID="500001" corporationName="Caldari State" allianceID="0" allianceName="" factionID="0" factionName="" securityStatus="0" damageDone="227" finalBlow="0" weaponTypeID="0" shipTypeID="32964" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="22291" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31788" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2404" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="5973" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="2404" flag="31" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="24495" flag="28" qtyDropped="0" qtyDestroyed="23" singleton="0" />
+          <row typeID="31586" flag="94" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="24495" flag="27" qtyDropped="0" qtyDestroyed="23" singleton="0" />
+          <row typeID="2404" flag="33" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2404" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="24495" flag="31" qtyDropped="23" qtyDestroyed="0" singleton="0" />
+          <row typeID="2404" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="22291" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="24495" flag="33" qtyDropped="23" qtyDestroyed="0" singleton="0" />
+          <row typeID="24495" flag="30" qtyDropped="0" qtyDestroyed="23" singleton="0" />
+          <row typeID="31358" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2404" flag="29" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="24495" flag="5" qtyDropped="0" qtyDestroyed="2041" singleton="0" />
+          <row typeID="2404" flag="32" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="24495" flag="32" qtyDropped="23" qtyDestroyed="0" singleton="0" />
+          <row typeID="24495" flag="29" qtyDropped="0" qtyDestroyed="23" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55723010" solarSystemID="30045309" killTime="2016-08-24 02:40:24" moonID="40347796">
+        <victim characterID="0" characterName="" corporationID="1010464191" corporationName="14th Legion" allianceID="99003894" allianceName="The Bastard Cartel" factionID="0" factionName="" damageTaken="52701" shipTypeID="17187" x="-4136215879199.99" y="-52083057120.0016" z="2223822651360.02" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.776844381892993" damageDone="37824" finalBlow="1" weaponTypeID="3025" shipTypeID="29337" />
+          <row characterID="603860160" characterName="CrossMod" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.5" damageDone="10771" finalBlow="0" weaponTypeID="4302" shipTypeID="4302" />
+          <row characterID="92980229" characterName="ROBERTO FRESH" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="3.9" damageDone="4106" finalBlow="0" weaponTypeID="8117" shipTypeID="11377" />
+          <row characterID="95695928" characterName="cobolt Aideron" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.5" damageDone="0" finalBlow="0" weaponTypeID="27361" shipTypeID="11993" />
+          <row characterID="93309684" characterName="FyrenStar" corporationID="440090368" corporationName="M. Corp Engineering" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.9" damageDone="0" finalBlow="0" weaponTypeID="7087" shipTypeID="4302" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55722981" solarSystemID="30045309" killTime="2016-08-24 02:38:02" moonID="40347796">
+        <victim characterID="0" characterName="" corporationID="1010464191" corporationName="14th Legion" allianceID="99003894" allianceName="The Bastard Cartel" factionID="0" factionName="" damageTaken="22582" shipTypeID="16221" x="-4136215881600" y="-52083050880.0001" z="2223822641280" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.776844381892993" damageDone="12961" finalBlow="1" weaponTypeID="3025" shipTypeID="29337" />
+          <row characterID="603860160" characterName="CrossMod" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.5" damageDone="9621" finalBlow="0" weaponTypeID="4302" shipTypeID="4302" />
+          <row characterID="92980229" characterName="ROBERTO FRESH" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="3.9" damageDone="0" finalBlow="0" weaponTypeID="8117" shipTypeID="11377" />
+          <row characterID="95695928" characterName="cobolt Aideron" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.5" damageDone="0" finalBlow="0" weaponTypeID="1877" shipTypeID="11993" />
+          <row characterID="93309684" characterName="FyrenStar" corporationID="440090368" corporationName="M. Corp Engineering" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.9" damageDone="0" finalBlow="0" weaponTypeID="7087" shipTypeID="4302" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55722941" solarSystemID="30045309" killTime="2016-08-24 02:34:06" moonID="40347796">
+        <victim characterID="0" characterName="" corporationID="1010464191" corporationName="14th Legion" allianceID="99003894" allianceName="The Bastard Cartel" factionID="0" factionName="" damageTaken="36649" shipTypeID="14343" x="-4136215882080" y="-52083054240" z="2223822648480" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.776844381892993" damageDone="36649" finalBlow="1" weaponTypeID="3025" shipTypeID="29337" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55688743" solarSystemID="30045312" killTime="2016-08-21 22:19:15" moonID="40347957">
+        <victim characterID="0" characterName="" corporationID="1184675423" corporationName="Amok." allianceID="1354830081" allianceName="Goonswarm Federation" factionID="0" factionName="" damageTaken="55953" shipTypeID="12237" x="-164007567384.257" y="-2723876641.51799" z="586219561041.739" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.918938219163698" damageDone="55953" finalBlow="1" weaponTypeID="2913" shipTypeID="29990" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55688251" solarSystemID="30045309" killTime="2016-08-21 21:44:50" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="12119" shipTypeID="11961" x="2045678701459.92" y="-127492390644.948" z="410969962109.246" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1834554022" characterName="Jimmy217" corporationID="116777001" corporationName="SniggWaffe" allianceID="99003579" allianceName="WAFFLES." factionID="0" factionName="" securityStatus="-9.99999999999949" damageDone="12119" finalBlow="1" weaponTypeID="2969" shipTypeID="29990" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="31796" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21896" flag="31" qtyDropped="78" qtyDestroyed="0" singleton="0" />
+          <row typeID="2281" flag="21" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2410" flag="29" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27441" flag="5" qtyDropped="999" qtyDestroyed="0" singleton="0" />
+          <row typeID="21896" flag="28" qtyDropped="0" qtyDestroyed="78" singleton="0" />
+          <row typeID="2048" flag="11" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="3841" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="527" flag="23" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="2897" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1447" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31796" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1447" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="527" flag="24" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="20008" flag="5" qtyDropped="640" qtyDestroyed="0" singleton="0" />
+          <row typeID="1447" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="28668" flag="5" qtyDropped="0" qtyDestroyed="200" singleton="0" />
+          <row typeID="2897" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="21896" flag="30" qtyDropped="78" qtyDestroyed="0" singleton="0" />
+          <row typeID="2281" flag="22" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="12076" flag="19" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27441" flag="29" qtyDropped="13" qtyDestroyed="0" singleton="0" />
+          <row typeID="21896" flag="27" qtyDropped="0" qtyDestroyed="78" singleton="0" />
+          <row typeID="2897" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21896" flag="5" qtyDropped="0" qtyDestroyed="1352" singleton="0" />
+          <row typeID="2897" flag="31" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2488" flag="87" qtyDropped="2" qtyDestroyed="1" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55682085" solarSystemID="30003698" killTime="2016-08-21 17:18:12" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="488" shipTypeID="670" x="2603416403302.53" y="438180132353.04" z="2142617633155.63" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1234028577" characterName="Dayltor" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5.00036658309126" damageDone="287" finalBlow="1" weaponTypeID="2905" shipTypeID="34562" />
+          <row characterID="96550593" characterName="Rudy McRood" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.5" damageDone="201" finalBlow="0" weaponTypeID="603" shipTypeID="603" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton" />
+      </row>
+      <row killID="55682048" solarSystemID="30003698" killTime="2016-08-21 17:16:43" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="14449" shipTypeID="11993" x="2603416403525.35" y="438180132129.865" z="2142617633378.56" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="96055748" characterName="Molotovsoda Oramara" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.37796714776793" damageDone="362" finalBlow="1" weaponTypeID="487" shipTypeID="16242" />
+          <row characterID="96022042" characterName="Bastiaanbb bb" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="2.7" damageDone="973" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="94251156" characterName="XeBr Anderson" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="955" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96509684" characterName="Mr Bignose" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="814" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="636186501" characterName="Vladami" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="760" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="91961268" characterName="Agux Vathypied" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="751" finalBlow="0" weaponTypeID="16238" shipTypeID="16238" />
+          <row characterID="236843724" characterName="Ithilgore" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="750" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="96229267" characterName="Rable Roussier" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1.9" damageDone="716" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="93253694" characterName="Jan Bonet" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="672" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="941520706" characterName="Gouro" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.2" damageDone="621" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="96322073" characterName="eff9" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="552" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="96266519" characterName="Judas GoldStein" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="542" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="96316572" characterName="Oksana Oksanovic" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.1" damageDone="525" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="140375082" characterName="muurahainen" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="486" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96250716" characterName="Raven Dallacort" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="483" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="1664678086" characterName="Keldin Zulah" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="456" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96575488" characterName="Wulver Dex" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="405" finalBlow="0" weaponTypeID="27387" shipTypeID="621" />
+          <row characterID="1381827438" characterName="Gallente Citizen 1381827438" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="402" finalBlow="0" weaponTypeID="2905" shipTypeID="16242" />
+          <row characterID="1234028577" characterName="Dayltor" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="398" finalBlow="0" weaponTypeID="34562" shipTypeID="34562" />
+          <row characterID="95067348" characterName="Zifnab TheGreat" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="3.5" damageDone="373" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96616254" characterName="Aldurin Pollard" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1.8" damageDone="344" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="95747471" characterName="Boone Omerta" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="299" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96554521" characterName="Alex Udani" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.8" damageDone="249" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="95792740" characterName="Krom Alabel" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="-0.1" damageDone="198" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96603993" characterName="Nikita Sparkow" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="0.5" damageDone="193" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="527675223" characterName="Dark Sentry" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="173" finalBlow="0" weaponTypeID="627" shipTypeID="627" />
+          <row characterID="96591303" characterName="Shas Hakomairos" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="2.3" damageDone="166" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96563299" characterName="Arlen Spirits" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="156" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96158108" characterName="Marie Guano" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="129" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96549825" characterName="Erkki Pers" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="120" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96637181" characterName="Planetkiller Wehrwolf" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.4" damageDone="108" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="95472433" characterName="Reefer" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="-2.8" damageDone="89" finalBlow="0" weaponTypeID="27371" shipTypeID="11176" />
+          <row characterID="96614540" characterName="Aarron Fijikisi" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="1.8" damageDone="88" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="96550593" characterName="Rudy McRood" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.5" damageDone="72" finalBlow="0" weaponTypeID="603" shipTypeID="603" />
+          <row characterID="95564078" characterName="Eradox Nocturn" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="69" finalBlow="0" weaponTypeID="16242" shipTypeID="16242" />
+          <row characterID="1332157393" characterName="JudgeNo" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="9521" shipTypeID="632" />
+          <row characterID="96318879" characterName="nobu Onren" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.3" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="96388304" characterName="Daasmo Kashuken" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.3" damageDone="0" finalBlow="0" weaponTypeID="8007" shipTypeID="621" />
+          <row characterID="95927515" characterName="Harris Grekos" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="4.5" damageDone="0" finalBlow="0" weaponTypeID="1877" shipTypeID="621" />
+          <row characterID="96374245" characterName="Prem Mium" corporationID="98388312" corporationName="Pandemic Horde Inc." allianceID="99005338" allianceName="Pandemic Horde" factionID="0" factionName="" securityStatus="5" damageDone="0" finalBlow="0" weaponTypeID="486" shipTypeID="16242" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="15909" flag="21" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1877" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="5" qtyDropped="0" qtyDestroyed="4760" singleton="0" />
+          <row typeID="2048" flag="11" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="3841" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="31" qtyDropped="0" qtyDestroyed="14" singleton="0" />
+          <row typeID="27361" flag="5" qtyDropped="0" qtyDestroyed="5120" singleton="0" />
+          <row typeID="3841" flag="23" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1877" flag="32" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1877" flag="29" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="12198" flag="5" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="30" qtyDropped="0" qtyDestroyed="14" singleton="0" />
+          <row typeID="31724" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="22291" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="29" qtyDropped="0" qtyDestroyed="14" singleton="0" />
+          <row typeID="5975" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="22291" flag="13" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="1877" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="28668" flag="5" qtyDropped="1500" qtyDestroyed="0" singleton="0" />
+          <row typeID="2281" flag="22" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1877" flag="31" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27381" flag="5" qtyDropped="5000" qtyDestroyed="0" singleton="0" />
+          <row typeID="23707" flag="87" qtyDropped="0" qtyDestroyed="3" singleton="0" />
+          <row typeID="27387" flag="28" qtyDropped="14" qtyDestroyed="0" singleton="0" />
+          <row typeID="22291" flag="12" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="27387" flag="27" qtyDropped="0" qtyDestroyed="14" singleton="0" />
+          <row typeID="27387" flag="32" qtyDropped="0" qtyDestroyed="14" singleton="0" />
+          <row typeID="31736" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="1877" flag="27" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55674276" solarSystemID="30045308" killTime="2016-08-21 07:29:57" moonID="0">
+        <victim characterID="93256039" characterName="John Drakeson" corporationID="98472114" corporationName="Sangre del Toro" allianceID="0" allianceName="" factionID="0" factionName="" damageTaken="2321" shipTypeID="587" x="-3722836994124.95" y="-452889350542.089" z="906984778049.584" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="0.953925213576487" damageDone="2321" finalBlow="1" weaponTypeID="2889" shipTypeID="11196" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="21924" flag="30" qtyDropped="0" qtyDestroyed="102" singleton="0" />
+          <row typeID="27315" flag="5" qtyDropped="0" qtyDestroyed="24" singleton="0" />
+          <row typeID="2889" flag="28" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="4027" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="16525" flag="29" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="5445" flag="19" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21924" flag="28" qtyDropped="0" qtyDestroyed="102" singleton="0" />
+          <row typeID="12625" flag="5" qtyDropped="330" qtyDestroyed="0" singleton="0" />
+          <row typeID="31656" flag="94" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="31021" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21924" flag="5" qtyDropped="288" qtyDestroyed="0" singleton="0" />
+          <row typeID="2889" flag="27" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2456" flag="5" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="519" flag="11" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2889" flag="30" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="2048" flag="12" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="21924" flag="27" qtyDropped="102" qtyDestroyed="0" singleton="0" />
+          <row typeID="20347" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="6001" flag="21" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="31033" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="27315" flag="29" qtyDropped="0" qtyDestroyed="28" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55674138" solarSystemID="30045310" killTime="2016-08-21 07:14:48" moonID="0">
+        <victim characterID="93256039" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" damageTaken="2508" shipTypeID="37456" x="49399728617.5186" y="118283297715.903" z="25028199648.3255" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1158236306" characterName="Cyaxares II" corporationID="98338494" corporationName="Vectigalia Inc" allianceID="0" allianceName="" factionID="500004" factionName="Gallente Federation" securityStatus="0.265774250343315" damageDone="2508" finalBlow="1" weaponTypeID="3178" shipTypeID="17841" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="4405" flag="13" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="23009" flag="27" qtyDropped="74" qtyDestroyed="0" singleton="0" />
+          <row typeID="3178" flag="28" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="23009" flag="28" qtyDropped="74" qtyDestroyed="0" singleton="0" />
+          <row typeID="33892" flag="94" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="3888" flag="12" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="12612" flag="5" qtyDropped="1000" qtyDestroyed="0" singleton="0" />
+          <row typeID="23009" flag="5" qtyDropped="0" qtyDestroyed="1000" singleton="0" />
+          <row typeID="2048" flag="11" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="527" flag="20" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="33892" flag="92" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="438" flag="21" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="3178" flag="27" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="448" flag="19" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+          <row typeID="12614" flag="5" qtyDropped="0" qtyDestroyed="1000" singleton="0" />
+          <row typeID="33892" flag="93" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="2488" flag="87" qtyDropped="5" qtyDestroyed="0" singleton="0" />
+          <row typeID="4405" flag="14" qtyDropped="1" qtyDestroyed="0" singleton="0" />
+        </rowset>
+      </row>
+      <row killID="55673329" solarSystemID="30004044" killTime="2016-08-21 05:53:19" moonID="0">
+        <victim characterID="95839108" characterName="Wilson Shayiskhun" corporationID="98144067" corporationName="SUPERFLUOUS WANDERLUST" allianceID="99005805" allianceName="The-Culture" factionID="0" factionName="" damageTaken="459" shipTypeID="670" x="-3007421766571.83" y="460952500645.895" z="659312021599.127" />
+        <rowset name="attackers" columns="characterID,characterName,corporationID,corporationName,allianceID,allianceName,factionID,factionName,securityStatus,damageDone,finalBlow,weaponTypeID,shipTypeID">
+          <row characterID="1511331418" characterName="John McHenry" corporationID="98117593" corporationName="Tritanium Industries and Technology" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="1.01318483325649" damageDone="276" finalBlow="1" weaponTypeID="2897" shipTypeID="11961" />
+          <row characterID="806046904" characterName="Arhes Branwin" corporationID="1413898101" corporationName="The Executives" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="4.7" damageDone="183" finalBlow="0" weaponTypeID="11184" shipTypeID="11184" />
+          <row characterID="645038190" characterName="Azalean" corporationID="440090368" corporationName="M. Corp Engineering" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-0.8" damageDone="0" finalBlow="0" weaponTypeID="3244" shipTypeID="17720" />
+          <row characterID="91644996" characterName="pvt romanovia romanovia" corporationID="1413898101" corporationName="The Executives" allianceID="151380924" allianceName="Executive Outcomes" factionID="0" factionName="" securityStatus="-9.7" damageDone="0" finalBlow="0" weaponTypeID="527" shipTypeID="22464" />
+        </rowset>
+        <rowset name="items" columns="typeID,flag,qtyDropped,qtyDestroyed,singleton">
+          <row typeID="9942" flag="89" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="9899" flag="89" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="9941" flag="89" qtyDropped="0" qtyDestroyed="1" singleton="0" />
+          <row typeID="9943" flag="89" qtyDropped="0" qtyDestroyed="1" singleton="0" />
         </rowset>
       </row>
     </rowset>
   </result>
-  <cachedUntil>2016-07-06 06:16:28</cachedUntil>
+  <cachedUntil>2016-09-22 15:50:53</cachedUntil>
 </eveapi>
