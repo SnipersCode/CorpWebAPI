@@ -9,8 +9,6 @@ module.exports = function endpoints(socket) {
   //test.refresh();
 
   socket.on('connection', (client) => {
-    console.log('spark connected');
-
     client.on('data', (data) => {
       // Do routing
       switch (data.module) {
@@ -27,6 +25,5 @@ module.exports = function endpoints(socket) {
     });
 
   }).on('disconnection', (spark) => {
-    console.log('spark disconnected');
   });
 };

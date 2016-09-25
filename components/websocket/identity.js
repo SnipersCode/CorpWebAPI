@@ -8,6 +8,13 @@ const core_errors = require('../core/errors');
 
 module.exports = {
   server: (primus, settings) => {
+    // Extend spark with initializations
+    const Spark = primus.Spark;
+    Spark.prototype.user_id = "";
+    Spark.prototype.name = "";
+    Spark.prototype.jti = "";
+    Spark.prototype.jwt_data = {};
+    Spark.prototype.permissions = new Map();
 
     // Validate data
     primus.transform('incoming', function (packet, next) {

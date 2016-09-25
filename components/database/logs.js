@@ -7,10 +7,10 @@ module.exports.main = function logs_main(type, message) {
 module.exports.auth = function logs_auth(user_id, name, type, event, target, data) {
   return r.table('logs_auth').insert({
     user_id: user_id,
-    name: user_name,
+    name: name,
     type: type,
     action: event,
     target: target,
     data: data
-  }).run();
+  }).run().catch(console.log);
 };

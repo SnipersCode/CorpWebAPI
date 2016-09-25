@@ -1,6 +1,9 @@
 r = require('./database');
 
-module.exports.get = function get(group_names) {
+module.exports.get = function get(group_names, all=false) {
+  if (all) {
+    return r.table('auth_groups').run();
+  }
   if (group_names){
     return r.table('auth_groups').getAll(...group_names).orderBy(r.desc('priority')).run();
   } else {

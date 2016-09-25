@@ -39,6 +39,9 @@ module.exports.jwt_data = function jwt_data(user_id, timestamp) {
         if (user.alliance_id == config.affiliation.alliance_id) {
           permissions_map.set("alliance", true);
         }
+        if (user.character_id == config.affiliation.super_admin) {
+          permissions_map.set("super_admin", true);
+        }
 
         return {
           iat: Math.floor(timestamp.getTime() / 1000),
@@ -65,7 +68,7 @@ module.exports.protect = function protect(client, permissions, error) {
   return new Promise((fulfill, reject) => {
     let valid = true;
 
-    if (permissions.indexOf('super_admin') === -1){ // Bypass check for super admins
+    if (!client.permissions.get('super_admin')){ // Bypass check for super admins
       for (const permission of permissions) {
         if (!client.permissions.get(permission)) {
           client.end(core_errors.auth.permissions);

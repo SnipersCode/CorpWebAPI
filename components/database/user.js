@@ -46,6 +46,14 @@ module.exports.group_changes = function group_changes(callback) {
   );
 };
 
+module.exports.auth_group_changes = function auth_group_changes(callback) {
+  r.table('auth_groups').changes().run().then(
+    (cursor) => {
+      cursor.each((err, change) => callback(err, change));
+    }
+  );
+};
+
 module.exports.associate_changes = function associate_changes(callback) {
   r.table('users').filter(r.row('main_user')).changes().run().then(
     (cursor) => {
@@ -70,10 +78,21 @@ module.exports.associations = function associations(user_id) {
 
 module.exports.update_affiliations = function update_affiliations(user_id) {
   return r.table('settings').insert(
-    r.table('users').get(user_id).pluck(["corporation_id", "alliance_id"]).merge({"id": "affiliations"})
+    r.table('users').get(user_id).pluck(["corporation_id", "alliance_id"]).merge({
+      id: "affiliations", group: "auth"})
   , {conflict: "update"}).run();
 };
 
 module.exports.get_affiliations = function get_affiliations() {
   return r.table('settings').get('affiliations').run();
+};
+
+module.exports.has_group = function has_group(group) {
+  return r.table('users').filter(r.row('auth_groups').contains(group)).pluck(["id", "character_name", "character_id"]).run();
+};
+
+module.exports.find_by_name = function find_user_by_name(name) {
+  return r.table('users').filter(r.row('character_name').match("(?i)" + name)
+    .and(r.row('main_user').default(r.row('id')).eq(r.row('id'))))
+    .limit(5).run();
 };

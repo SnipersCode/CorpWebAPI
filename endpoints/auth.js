@@ -6,30 +6,74 @@ const auth_groups = require('../components/database/auth_groups');
 const logs = require('../components/database/logs');
 const core_errors = require('../components/core/errors');
 
+const send_groups = function write_groups(client) {
+  return auth_groups.get(null, true)
+    .then((groups) => {
+      client.write({
+        module: "auth",
+        endpoint: "groups.get",
+        payload: groups
+      })
+    });
+};
+
+const send_users = function write_users(group, client) {
+  return user_db.has_group(group)
+    .then((users) => {
+      client.write({
+        module: "auth",
+        endpoint: "groups.get_users",
+        payload: users
+      })
+    });
+};
+
 const endpoint = function on_data(client, data) {
   if (data.endpoint.startsWith("groups.")) {
     core_auth.protect(client, ["edit_auth_groups"])
       .then(() => {
         switch (data.endpoint) {
           case "groups.create":
-            logs.auth(client.user_id, client.name, "groups", "create", data.payload.id, data.payload);
-            auth_groups.create(data.payload);
+            logs.auth(client.user_id, client.name, "groups", "create", data.payload.id, data.payload)
+              .then(() => auth_groups.create(data.payload))
+              .then(() => send_groups(client))
+              .catch(console.log);
             break;
           case "groups.remove":
-            logs.auth(client.user_id, client.name, "groups", "remove", data.payload.id, data.payload);
-            auth_groups.remove(data.payload);
+            logs.auth(client.user_id, client.name, "groups", "remove", data.payload.id, data.payload)
+              .then(() => auth_groups.remove(data.payload))
+              .then(() => send_groups(client))
+              .catch(console.log);
             break;
           case "groups.edit":
-            logs.auth(client.user_id, client.name, "groups", "edit", data.payload.id, data.payload);
-            auth_groups.edit(data.payload);
+            logs.auth(client.user_id, client.name, "groups", "edit", data.payload.id, data.payload)
+              .then(() => auth_groups.edit(data.payload))
+              .then(() => send_groups(client))
+              .catch(console.log);
             break;
           case "groups.add_user":
-            logs.auth(client.user_id, client.name, "groups", "add_user", data.payload.user_id, data.payload);
-            user_db.add_groups(data.payload.user_id, data.payload.groups);
+            logs.auth(client.user_id, client.name, "groups", "add_user", data.payload.user_id, data.payload)
+              .then(() => user_db.add_groups(data.payload.user_id, data.payload.groups))
+              .then(() => {
+                for (const group of data.payload.groups) {
+                  send_users(group, client)
+                }
+              });
             break;
           case "groups.remove_user":
-            logs.auth(client.user_id, client.name, "groups", "remove_user", data.payload.user_id, data.payload);
-            user_db.remove_groups(data.payload.user_id, data.payload.groups);
+            logs.auth(client.user_id, client.name, "groups", "remove_user", data.payload.user_id, data.payload)
+              .then(() => user_db.remove_groups(data.payload.user_id, data.payload.groups))
+              .then(() => {
+                for (const group of data.payload.groups) {
+                  send_users(group, client)
+                }
+              });
+            break;
+          case "groups.get":
+            send_groups(client);
+            break;
+          case "groups.get_users":
+            send_users(data.payload, client);
             break;
         }
       });
@@ -64,6 +108,14 @@ const endpoint = function on_data(client, data) {
               payload: characters
             }));
         }
+        break;
+      case "user.find":
+        user_db.find_by_name(data.payload)
+          .then((users) => client.write({
+            module: "auth",
+            endpoint: "user.find",
+            payload: users
+          }));
         break;
       case "logout":
         if (data.payload) {
@@ -135,6 +187,24 @@ module.exports = function initialize(socket) {
           });
       }
     })
+  });
+  // Watch for edits to site auth groups
+  user_db.auth_group_changes((err, change) => {
+    // Might want to change this loop in the future if there are many clients. Broadcast to all.
+    socket.forEach((client, id, connections) => {
+      // Recalculate permissions for all signed in users.
+      if (client.user_id){
+        core_auth.jwt_data(client.user_id, new Date(client.jwt_data.iat * 1000))
+          .then((jwt_data) => {
+            client.jwt_data = jwt_data;
+            client.write({
+              module: "auth",
+              endpoint: "change.auth_group_root",
+              payload: change.new_val
+            });
+          });
+      }
+    });
   });
   // Watch for association changes
   user_db.associate_changes((err, change) => {

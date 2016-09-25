@@ -9,9 +9,8 @@ edit_auth_groups
 edit_user
 - associate
 srp_approve
-- approve
-- deny
-- release
+- set srp status
+- edit srp docs
 
 settings
 =========
@@ -20,4 +19,17 @@ settings
   group: 'market',
   deviation: 0.1, // 10% by default
   timeout: 60 * 60 * 24 * 7 // In seconds, "about" (not exactly) one week by default
+}
+{
+  id: 'affiliations',
+  group: 'auth',
+  corporation_id,
+  alliance_id
+}
+{
+  id: 'srp_rules',
+  group: 'srp',
+  'standard': [[lower_ship_group_id, multiplier],...],
+  'rule_group': [[,],...],
+  ...
 }
