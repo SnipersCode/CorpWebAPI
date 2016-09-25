@@ -37,6 +37,22 @@ endpoint: groups.remove
 ------------------------
 payload (str): id for group
 
+endpoint: groups.get
+---------------------
+payload (str): id of group
+return (object): same as groups.create payload
+
+endpoint: groups.get_users
+---------------------------
+payload (str): id of group
+return (array): [
+	{
+		id,
+		character_id,
+		character_name
+	}
+]
+
 endpoint: user.associate
 --------------------------
 payload: {
@@ -53,6 +69,17 @@ return (object): [
 		corporation_name,
 		alliance_name
 		
+	}
+]
+
+endpoint: user.find
+--------------------
+payload (str): "partial string of name"
+return (array): [
+	{
+		id,
+		character_id,
+		character_name
 	}
 ]
 

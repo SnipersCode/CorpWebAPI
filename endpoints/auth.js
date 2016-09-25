@@ -90,24 +90,12 @@ const endpoint = function on_data(client, data) {
         }
         break;
       case "user.characters":
-        if (data.payload !== client.user_id) {
-          core_auth.protect(client, ["edit_user"])
-            .then(() => {
-              return user_db.associations(data.payload);
-            })
-            .then((characters) => client.write({
-              module: "auth",
-              endpoint: "user.characters",
-              payload: characters
-            }));
-        } else {
-          user_db.associations(data.payload)
-            .then((characters) => client.write({
-              module: "auth",
-              endpoint: "user.characters",
-              payload: characters
-            }));
-        }
+        user_db.associations(data.payload)
+          .then((characters) => client.write({
+            module: "auth",
+            endpoint: "user.characters",
+            payload: characters
+          }));
         break;
       case "user.find":
         user_db.find_by_name(data.payload)

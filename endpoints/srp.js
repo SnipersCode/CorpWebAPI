@@ -122,7 +122,12 @@ const endpoint = function on_data(client, data) {
               });
             });
           })
-          .then(killmails.submit);
+          .then(killmails.submit)
+          .then(() => client.write({
+            module: "srp",
+            endpoint: "lossmails.submit",
+            payload: true
+          }));
         break;
       case "rules.get":
         settings.srp_rules.get().then((all_rules) => {
@@ -156,9 +161,7 @@ module.exports = function initialize(socket) {
     })
   });
   settings.srp_rules.changes((err, change) => {
-    console.log(change);
     socket.forEach((client, id, connections) => {
-      console.log(client);
       if (client.permissions.get('corporation')) {
         client.write({
           module: "srp",
