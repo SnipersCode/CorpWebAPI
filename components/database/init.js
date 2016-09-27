@@ -5,7 +5,7 @@ const config = require('../../config');
 const tables = new Map();
 tables.set("auth_groups", ["priority"]);
 tables.set("caches", ["parent"]);
-tables.set("eve_killmails", ["srp_user_id"]);
+tables.set("eve_killmails", ["submitter_id"]);
 tables.set("eve_meta", []);
 tables.set("eve_ship_groups", ["name", "parent_id", "parent_name"]);
 tables.set("eve_ships", ["name", "group_id", "group_name", "lower_group_id", "lower_group_name"]);

@@ -54,7 +54,6 @@ function read_kills(token, user) {
       }
       // Update Database
       cache.update("killmails", new Date(data.eveapi.cachedUntil[0].replace(" ", "T")), user.id);
-      console.log(losses);
       return r.table('eve_killmails').insert(losses, {conflict: "update"}).run();
     });
 }
@@ -76,7 +75,7 @@ module.exports.get = function insert(user_id, character_id, character_name) {
       }
     })
     .then(() =>
-      r.table('eve_killmails').getAll(character_id, {index: "srp_user_id"})
+      r.table('eve_killmails').getAll(user_id, {index: "submitter_id"})
         .filter(r.row('kill_time').gt(r.now().sub(2678400))).orderBy(r.desc('kill_time')).run()   // Limit to 1 month
     );
 };
