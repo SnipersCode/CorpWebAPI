@@ -54,6 +54,7 @@ function read_kills(token, user) {
       }
       // Update Database
       cache.update("killmails", new Date(data.eveapi.cachedUntil[0].replace(" ", "T")), user.id);
+      console.log(losses);
       return r.table('eve_killmails').insert(losses, {conflict: "update"}).run();
     });
 }

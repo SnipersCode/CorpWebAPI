@@ -76,6 +76,7 @@ const endpoint = function on_data(client, data) {
             )))
           .then(srp_prices)
           .then((losses) => {
+            console.log('writing losses');
             client.write({
               module: "srp",
               endpoint: "lossmails.get",

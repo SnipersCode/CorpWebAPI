@@ -47,7 +47,10 @@ module.exports.char = {
       "/char/KillMails.xml.aspx?characterID=" + characterID,
       access_token
     )
-  ).then(xmlParser)
+  ).then((response) => {
+    console.log(response);
+    return response;
+  }).then(xmlParser)
   // Use fake response
   /*KillMails: (characterID, access_token) => {
     return fs(__dirname + "/../../test/responses/xml/Character_KillMails.xml").then(xmlParser)
