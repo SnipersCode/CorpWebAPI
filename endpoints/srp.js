@@ -53,15 +53,15 @@ const srp_prices = function calculate_prices(losses, unfold=true) {
   );
 };
 
-const multiplier = function multiplier(rules, ship_group_id) {
-  rules = new Map(rules);
-  let multiplier = rules.get(ship_group_id);
-  if (!multiplier || !ship_group_id) { // No specific rule or no lower ship group
-    multiplier = rules.get(null);
-    if (!multiplier) {  // No default
-      multiplier = 0;
-    }
-  }
+const multiplier = function multiplier(rules, ship_group_id, ship_id) {
+  const group_rules = new Map(rules.groups);
+  const specific_rules = new Map(rules.ships);
+
+  let multiplier = specific_rules.get(ship_id); // Check specific rules
+  multiplier = !(multiplier && ship_id) ? group_rules.get(ship_group_id) : multiplier; // Check group rules
+  multiplier = !(multiplier && ship_group_id) ? group_rules.get(null) : multiplier; // Check default
+  multiplier = !(multiplier) ? 0 : multiplier; // 0 if no default
+
   return multiplier;
 };
 
@@ -106,6 +106,7 @@ const endpoint = function on_data(client, data) {
               killmail.aar = edits.aar;
               killmail.note = edits.note;
               killmail.srp_type = edits.srp_type;
+              killmail.srp_flags = edits.srp_flags;
               killmail.srp_submitter_id = client.user_id;
               killmail.srp_submitter_name = client.name;
               return killmail;
@@ -117,7 +118,7 @@ const endpoint = function on_data(client, data) {
             return settings.srp_rules.get().then((all_rules) => {
               return killmails.map((killmail) => {
                 killmail.srp_total = killmail.srp_base_price * multiplier(
-                  all_rules[killmail.srp_type], killmail.lower_ship_group_id);
+                  all_rules[killmail.srp_type], killmail.lower_ship_group_id, killmail.ship_item_id);
                 return killmail;
               });
             });
@@ -141,6 +142,38 @@ const endpoint = function on_data(client, data) {
       case "lossmails.edit":
         core_auth.protect(client, ["srp_approve"]).then(() => {
           killmails.update(data.payload);
+        });
+        break;
+      case "rules.edit":
+        core_auth.protect(client, ["srp_approve"]).then(() => {
+          settings.srp_rules.set(data.payload.target, data.payload.rule,
+            data.payload.flags, data.payload.flags_only).then(() => {
+            client.write({
+              module: "srp",
+              endpoint: "rules.edit",
+              payload: data.payload.target
+            })
+          })
+        });
+        break;
+      case "rules.delete":
+        core_auth.protect(client, ["srp_approve"]).then(() => {
+          settings.srp_rules.remove(data.payload).then(() => {
+            client.write({
+              module: "srp",
+              endpoint: "rules.delete",
+              payload: data.payload
+            })
+          })
+        });
+        break;
+      case "ship_groups.get":
+        eve.ship_groups.get_list().then((groups) => {
+          client.write({
+            module: "srp",
+            endpoint: "ship_groups.get",
+            payload: groups
+          });
         });
         break;
     }

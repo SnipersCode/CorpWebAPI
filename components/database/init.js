@@ -75,13 +75,19 @@ module.exports = (callback) => {
       // Ignore ReqlOpFailedError
     })
     .then(() => {
+      // Static Refresh
       if (config.static_refresh) {
         console.log("Refreshing EVE Statics");
         static_db.refresh();
       } else {
         console.log("Skipping EVE Statics Refresh");
       }
-    })  // Uncomment to refresh statics every restart
+    })
+    .then(() => {
+      // Settings init
+      r.table("settings").insert({id: "srp_rules", group: "srp",
+        standard: {groups: [[null, 0]], ships: [[null, 0]]}}).run();
+    })
     .then(() => {
       callback();
     });

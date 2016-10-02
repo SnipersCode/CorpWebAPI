@@ -116,11 +116,12 @@ return (object): [
 endpoint: lossmails.submit
 -----------------------------
 payload (array): [{
-	"id": "kill id",
-	"reimburse_to": "character name",
-	"aar": "link",
-	"note": "",
-	"srp_type": "srp type"
+	id: "kill id",
+	reimburse_to: "character name",
+	aar: "link",
+	note: "",
+	srp_type: "srp type",
+	srp_flags: [true_flag, ...]
 }, ...]
 
 endpoint: lossmails.all
@@ -156,9 +157,32 @@ endpoint: rules.get  [returns as srp:change.rules]
 payload (null): ignored
 return (object):
 {
-  id: 'srp_rules',
-  group: 'srp',
-  'standard': [[lower_ship_group_id, multiplier],...],
-  'rule_group': [[,],...],
-  ...
+	id: 'srp_rules',
+	group: 'srp',
+	'standard': [[lower_ship_group_id, multiplier],...],
+	'rule_group': [[,],...],
+	...
+}
+
+endpoint: rules.edit
+---------------------
+payload (object): {
+	target: "srp_rule",
+	rule: {
+		groups: [[lower_ship_group_id, multiplier], ...],
+		ships: [[ship_item_id, multiplier], ...]
+	}
+}
+
+module: statics
+================
+
+endpoint: ship.by_name
+-----------------------
+payload (str): "name"
+return (object):
+{
+	id,
+	name,
+	icon: "http://imageserver.eveonline.com/"
 }
