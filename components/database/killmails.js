@@ -103,3 +103,19 @@ module.exports.submit = function submit(documents) {
 module.exports.update = function update(document) {
   return r.table('srp').get(document.id).update(document).run();
 };
+
+module.exports.srp_stats = function srp_stats() {
+
+  const total_isk = r.table('srp').sum(r.row('srp_paid')).run();
+  const total_requests = r.table('srp').filter({srp_status: "Paid"}).count().run();
+
+  return Promise.all([
+    total_isk,
+    total_requests
+  ]).then((stats) => {
+    return {
+      total_isk: stats[0],
+      total_requests: stats[1]
+    };
+  });
+};

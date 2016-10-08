@@ -117,8 +117,13 @@ const endpoint = function on_data(client, data) {
           .then((killmails) => {
             return settings.srp_rules.get().then((all_rules) => {
               return killmails.map((killmail) => {
-                killmail.srp_total = killmail.srp_base_price * multiplier(
+                const multiplier_result = multiplier(
                   all_rules[killmail.srp_type], killmail.lower_ship_group_id, killmail.ship_item_id);
+                if (multiplier_result >= 1000000) {
+                  killmail.srp_total = multiplier_result;
+                } else {
+                  killmail.srp_total = killmail.srp_base_price * multiplier_result;
+                }
                 return killmail;
               });
             });
@@ -173,6 +178,15 @@ const endpoint = function on_data(client, data) {
             module: "srp",
             endpoint: "ship_groups.get",
             payload: groups
+          });
+        });
+        break;
+      case "lossmails.stats":
+        killmails.srp_stats().then((stats) => {
+          client.write({
+            module: "srp",
+            endpoint: "lossmails.stats",
+            payload: stats
           });
         });
         break;
