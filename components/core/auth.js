@@ -1,5 +1,6 @@
 const user_db = require('../database/user');
 const auth_groups = require('../database/auth_groups');
+const settings = require('../database/settings');
 const core_errors = require('../core/errors');
 
 const config = require('../../config');
@@ -30,18 +31,34 @@ module.exports.jwt_data = function jwt_data(user_id, timestamp) {
   return user_db.get(user_id).then((user) => {
     return calculate_permissions(user.auth_groups)
       .then((permissions_map) => {
-        const groups = new Set(user.auth_groups);
-
-        // Affiliations
-        if (user.corporation_id == config.affiliation.corporation_id) {
-          permissions_map.set("corporation", true);
-        }
-        if (user.alliance_id == config.affiliation.alliance_id) {
-          permissions_map.set("alliance", true);
-        }
+        // Check super admin
         if (user.character_id == config.affiliation.super_admin) {
           permissions_map.set("super_admin", true);
         }
+        // Affiliations
+        return settings.affiliations.get().then((setting) => {
+          if (!setting) {
+            return permissions_map;
+          }
+          if (setting.corporation.id == user.corporation_id){
+            permissions_map.set("corporation", true);
+          }
+          if (setting.alliance.id == user.alliance_id && setting.alliance.id != 0){
+            permissions_map.set("alliance", true);
+          } else if (setting.alliance.id == 0 && setting.corporation.id == user.corporation_id) {
+            permissions_map.set("alliance", true);
+          }
+          for (const entity of setting.blues) {
+            if (entity.id == user.corporation_id || entity.id == user.alliance_id || entity.id == user.character_id) {
+              permissions_map.set("blue", true);
+              break;
+            }
+          }
+          return permissions_map;
+        });
+      })
+      .then((permissions_map) => {
+        const groups = new Set(user.auth_groups);
 
         return {
           iat: Math.floor(timestamp.getTime() / 1000),

@@ -9,6 +9,10 @@ module.exports.invalidate_all = function invalidate_all(user_id) {
   return r.table('jwts').filter(r.row('user_id').eq(user_id)).delete().run();
 };
 
+module.exports.purge = function purge() {
+  return r.table('jwts').delete().run();
+};
+
 module.exports.update = function update_user(id, new_user) {
   // Update jwt only after user has been updated
   return user_db.upsert(new_user)

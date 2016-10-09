@@ -17,6 +17,7 @@ tables.set("settings", []);
 tables.set("users", ["main_user"]);
 tables.set("srp", ["timestamp", "srp_user_id", "kill_time"]);
 tables.set("eve_systems", ["name"]);
+tables.set("security", []);
 
 function flatten(deep_array) {
   return [].concat(...deep_array).filter((value) => { if(value) { return true; }});

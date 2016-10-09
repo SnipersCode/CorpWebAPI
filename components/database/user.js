@@ -1,4 +1,4 @@
-r = require('./database');
+const r = require('./database');
 
 module.exports.upsert = function upsert(new_user) {
   // Update jwt only after user has been updated
@@ -6,7 +6,8 @@ module.exports.upsert = function upsert(new_user) {
 };
 
 module.exports.update = function update(new_user) {
-  return r.table('users').get(new_user.id).update(new_user).run();
+  return r.table('users').get(new_user.id).update(new_user).run()
+    .then(() => new_user); // Pass through new_user
 };
 
 module.exports.associate = function associate(user_id, main_user_id) {
@@ -83,16 +84,17 @@ module.exports.update_affiliations = function update_affiliations(user_id) {
   , {conflict: "update"}).run();
 };
 
-module.exports.get_affiliations = function get_affiliations() {
-  return r.table('settings').get('affiliations').run();
-};
-
 module.exports.has_group = function has_group(group) {
   return r.table('users').filter(r.row('auth_groups').contains(group)).pluck(["id", "character_name", "character_id"]).run();
 };
 
-module.exports.find_by_name = function find_user_by_name(name) {
-  return r.table('users').filter(r.row('character_name').match("(?i)" + name)
-    .and(r.row('main_user').default(r.row('id')).eq(r.row('id'))))
-    .limit(5).run();
+module.exports.find_by_name = function find_user_by_name(name, all=false) {
+  if (all) {
+    return r.table('users').filter(r.row('character_name').match("(?i)" + name))
+      .limit(5).run();
+  } else {
+    return r.table('users').filter(r.row('character_name').match("(?i)" + name)
+      .and(r.row('main_user').default(r.row('id')).eq(r.row('id'))))
+      .limit(5).run();
+  }
 };

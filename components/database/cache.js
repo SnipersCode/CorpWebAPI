@@ -1,6 +1,7 @@
 const r = require('./database');
 
 module.exports.check = function check(id, parent = null) {
+  // ID can be singular or an array
   // Returns map of id to boolean value
   const results = new Map();
   if (parent) {

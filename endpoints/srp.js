@@ -72,7 +72,7 @@ const endpoint = function on_data(client, data) {
         user_db.associations(client.user_id)
           .then((users) =>
             Promise.all(users.map((user) =>
-              killmails.get(user.id, user.character_id, user.character_name)
+              killmails.get(user.id)
             )))
           .then(srp_prices)
           .then((losses) => {

@@ -33,3 +33,13 @@ module.exports.srp_rules = {
     )
   }
 };
+
+module.exports.affiliations = {
+  get: function affiliation_get() {
+    return r.table('settings').get('affiliations').run();
+  },
+  set: function affiliation_set(document) {
+    document.id = 'affiliations';
+    return r.table('settings').insert(document, {conflict: "replace"}).run();
+  }
+};

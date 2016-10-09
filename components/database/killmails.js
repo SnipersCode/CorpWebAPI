@@ -1,14 +1,13 @@
 const r = require('./database');
 const cache = require('./cache');
 
-const crest = require('../eve_api/crest');
 const xml = require('../eve_api/xml');
 
 const eve_user = require('../eve_api/user');
 const prices = require('./prices');
 
-function read_kills(token, user) {
-  return xml.char.KillMails(user.character_id, token.access_token)
+function read_kills(user) {
+  return xml.char.KillMails(user.character_id, user.crest_access_token)
     .then((data) => {
       const kills = data.eveapi.result[0].rowset[0].row;
       const losses = [];
@@ -58,18 +57,13 @@ function read_kills(token, user) {
     });
 }
 
-module.exports.get = function insert(user_id, character_id, character_name) {
+module.exports.get = function insert(user_id) {
   return cache.check('killmails', user_id)
     .then((cache_map) => {
       // Check cache time
       if (!cache_map.get('killmails')) {
-        return eve_user.token(user_id)
-          .then((user_token) => crest.authenticate(...user_token))
-          .then((token) => read_kills(token, {
-            id: user_id,
-            character_id: character_id,
-            character_name: character_name
-          }));
+        return eve_user.refresh(user_id)
+          .then(read_kills);
       } else {
         return Promise.resolve();
       }

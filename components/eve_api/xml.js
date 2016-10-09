@@ -47,7 +47,15 @@ module.exports.char = {
       "/char/KillMails.xml.aspx?characterID=" + characterID,
       access_token
     )
+  ).then(xmlParser),
+
+  ContactList: (characterID, access_token) => request(
+    endpoint_settings(
+      "/char/ContactList.xml.aspx?characterID=" + characterID,
+      access_token
+    )
   ).then(xmlParser)
+
   // Use fake response
   /*KillMails: (characterID, access_token) => {
     return fs(__dirname + "/../../test/responses/xml/Character_KillMails.xml").then(xmlParser)

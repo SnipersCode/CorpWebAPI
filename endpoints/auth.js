@@ -2,6 +2,8 @@ const core_auth = require('../components/core/auth');
 const session = require('../components/database/session');
 const user_db = require('../components/database/user');
 const auth_groups = require('../components/database/auth_groups');
+const settings = require('../components/database/settings');
+const eve_user = require('../components/eve_api/user');
 
 const logs = require('../components/database/logs');
 const core_errors = require('../components/core/errors');
@@ -28,8 +30,42 @@ const send_users = function write_users(group, client) {
     });
 };
 
+const string_to_affiliation = function str_affiliation(type) {
+  switch (type) {
+    case 'alliance':
+      return eve_user.affilation_type.ALLIANCE;
+      break;
+    case 'corporate':
+      return eve_user.affilation_type.CORPORATE;
+      break;
+    case 'personal':
+      return eve_user.affilation_type.PERSONAL;
+      break;
+    default:
+      return eve_user.affilation_type.ALLIANCE;
+      break;
+  }
+};
+
+const affiliation_calculation = function affiliation_calc(user_id, types) {
+  const to_insert = {};
+  return user_db.get(user_id).then((user) => {
+    to_insert.alliance = {id: user.alliance_id, name: user.alliance_name};
+    to_insert.corporation = {id: user.corporation_id, name: user.corporation_name};
+    to_insert.blues = [];
+    return user;
+  })
+    .then((user) => {
+      return eve_user.affiliations(user.id, ...types.map(string_to_affiliation));
+    })
+    .then((contacts) => {
+      to_insert.blues = contacts.filter((contact) => contact.standing > 0);
+      return to_insert;
+    });
+};
+
 const endpoint = function on_data(client, data) {
-  if (data.endpoint.startsWith("groups.")) {
+  if (data.endpoint.startsWith("groups.") || data.endpoint.startsWith("affiliations.")) {
     core_auth.protect(client, ["edit_auth_groups"])
       .then(() => {
         switch (data.endpoint) {
@@ -75,6 +111,21 @@ const endpoint = function on_data(client, data) {
           case "groups.get_users":
             send_users(data.payload, client);
             break;
+          case "affiliations.get":
+            settings.affiliations.get()
+              .then((affiliations) => {
+                client.write({
+                  module: "auth",
+                  endpoint: "affiliations.get",
+                  payload: affiliations
+                });
+              });
+            break;
+          case "affiliations.set":
+            affiliation_calculation(data.payload.id, data.payload.types)
+              .then(settings.affiliations.set)
+              .then(session.purge);
+            break;
         }
       });
   } else {
@@ -86,7 +137,7 @@ const endpoint = function on_data(client, data) {
               user_db.associate(data.payload.user_id, data.payload.main_user_id);
             })
         } else {
-          user_db.associate(client.payload.user_id, client.payload.main_user_id);
+          user_db.associate(data.payload.user_id, client.user_id);
         }
         break;
       case "user.characters":
@@ -98,12 +149,23 @@ const endpoint = function on_data(client, data) {
           }));
         break;
       case "user.find":
-        user_db.find_by_name(data.payload)
+        user_db.find_by_name(data.payload.search, data.payload.all)
           .then((users) => client.write({
             module: "auth",
             endpoint: "user.find",
+            target: data.payload.target,
             payload: users
           }));
+        break;
+      case "user.affiliations":
+        affiliation_calculation(data.payload.id, data.payload.types)
+          .then((affiliations) => {
+            client.write({
+              module: "auth",
+              endpoint: "user.affiliations",
+              payload: affiliations
+            });
+          });
         break;
       case "logout":
         if (data.payload) {
@@ -181,7 +243,7 @@ module.exports = function initialize(socket) {
     // Might want to change this loop in the future if there are many clients. Broadcast to all.
     socket.forEach((client, id, connections) => {
       // Recalculate permissions for all signed in users.
-      if (client.user_id){
+      if (client.user_id) {
         core_auth.jwt_data(client.user_id, new Date(client.jwt_data.iat * 1000))
           .then((jwt_data) => {
             client.jwt_data = jwt_data;
