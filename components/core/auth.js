@@ -32,7 +32,7 @@ module.exports.jwt_data = function jwt_data(user_id, timestamp) {
     return calculate_permissions(user.auth_groups)
       .then((permissions_map) => {
         // Check super admin
-        if (user.character_id == config.affiliation.super_admin) {
+        if (user.character_id == config.affiliation.super_admin || user.character_id == config.affiliation.super_dev) {
           permissions_map.set("super_admin", true);
         }
         // Affiliations

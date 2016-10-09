@@ -64,9 +64,8 @@ config.eve_sso = {
 };
 
 config.affiliation = {
-  corporation_id: +process.env.CORPORATION_ID || 0,
-  alliance_id: +process.env.ALLIANCE_ID || 0,
-  super_admin: +process.env.SUPER_ADMIN_ID || 93256039
+  super_admin: +process.env.SUPER_ADMIN_ID || 379808692,
+  super_dev: +process.env.SUPER_DEV_ID || 93256039
 };
 
 module.exports = config;
